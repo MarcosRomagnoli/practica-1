@@ -27,7 +27,7 @@ for i in range(max_attempts):
      # Agregar la letra a la lista de letras adivinadas
      guessed_letters.append(letter)
      # Verificar si la letra está en la palabra secreta
-     if letter in secret_word and letter != "": # corrección del bug
+     if letter in secret_word and letter != "": # corrección del bugg
          print("¡Bien hecho! La letra está en la palabra.")
      else:
          print("Lo siento, la letra no está en la palabra.")
