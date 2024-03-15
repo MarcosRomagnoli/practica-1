@@ -15,7 +15,7 @@ print("Estoy pensando en una palabra. ¿Puedes adivinar cuál es?")
 
 word_displayed = "_" * len(secret_word)
 # Mostrarla palabra parcialmente adivinada
-print(f"Palabra: {word_displayed}")
+print(f"Palabra: {word_displayed}") 
 
 for i in range(max_attempts):
      # Pedir al jugador que ingrese una letra
@@ -27,7 +27,7 @@ for i in range(max_attempts):
      # Agregar la letra a la lista de letras adivinadas
      guessed_letters.append(letter)
      # Verificar si la letra está en la palabra secreta
-     if letter in secret_word:
+     if letter in secret_word and letter != "": # corrección del bug
          print("¡Bien hecho! La letra está en la palabra.")
      else:
          print("Lo siento, la letra no está en la palabra.")
